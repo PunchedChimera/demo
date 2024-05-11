@@ -11,6 +11,11 @@
 	<groupId>com.punchedchimera.dev</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>modules/demo-test-jar-module</module>
+		<module>modules/demo-app</module>
+	</modules>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -28,14 +33,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 </project>
